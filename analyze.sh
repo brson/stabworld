@@ -27,3 +27,9 @@ echo "repos using no features: $repos_not_using_features"
 echo "repos using only macro_rules or nothing: $repos_using_only_macro_rules_or_nothing"
 echo "repos using only macro_rules, globs or nothing: $repos_using_only_macro_rules_globs_or_nothing"
 
+features_only=`echo "$features" | sed 's/^.*: //' | sed '/^$/d'`
+feature_instances=`echo "$features_only" | tr " " "\n" | sort | uniq -c | sort -nr`
+
+echo
+echo "# Feature occurances"
+echo "$feature_instances"

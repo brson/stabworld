@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Clone all the repos on packages.txt
+
 mkdir -p repos
 
 for i in `cat packages.txt`

@@ -8,7 +8,6 @@ https://github.com/Arcterus/rust-snake
 https://github.com/DaGenix/rust-crypto
 https://github.com/DanielFath/xml-parser
 https://github.com/Divius/rust-dht
-https://github.com/Dr-Emann/rusty-irc
 https://github.com/Florob/RustyXML
 https://github.com/FranklinChen/merry-fxmas-rust
 https://github.com/FranklinChen/type-directed-tdd-rust
@@ -65,7 +64,6 @@ https://github.com/SiegeLord/RustGnuplot
 https://github.com/SiegeLord/SLRConfig
 https://github.com/TeXitoi/1wT
 https://github.com/TeXitoi/rust-mdo
-https://github.com/TheHydroImpulse/data.rs
 https://github.com/TheHydroImpulse/rust-nanomsg
 https://github.com/TimDumol/rust-otp
 https://github.com/TomBebbington/jit.rs
@@ -76,7 +74,6 @@ https://github.com/TyOverby/binary-encode
 https://github.com/TyOverby/irc-message
 https://github.com/TyOverby/iter_nd
 https://github.com/TyOverby/rust-termbox
-https://github.com/UberLambda/ecs
 https://github.com/Valve/heliotrope
 https://github.com/aaronweiss74/dnd
 https://github.com/aaronweiss74/irc
@@ -88,7 +85,7 @@ https://github.com/alexcrichton/bzip2-rs
 https://github.com/alexcrichton/cookie-rs
 https://github.com/alexcrichton/flate2-rs
 https://github.com/alexcrichton/git2-rs
-https://github.com/alexcrichton/jba/tree/rust
+https://github.com/alexcrichton/jba
 https://github.com/alexcrichton/rust-compress
 https://github.com/alexcrichton/splay-rs
 https://github.com/alexcrichton/ssh2-rs
@@ -125,12 +122,10 @@ https://github.com/blackbeam/rust-mysql-simple
 https://github.com/bluss/rust-itertools
 https://github.com/bluss/rust-ndarray
 https://github.com/bobbo/roslin
-https://github.com/bollu/spy/tree/dev
 https://github.com/bonifaido/rust-zookeeper
 https://github.com/brandonson/evict
 https://github.com/brson/rust-chamber
 https://github.com/brson/rust-sdl
-https://github.com/brycefisher/clickbank-upload
 https://github.com/brycefisher/defaulterrors
 https://github.com/brycefisher/htaccess2json.rs
 https://github.com/bsteinb/rust-iteratorcomprehensions
@@ -190,7 +185,6 @@ https://github.com/erik/knuckle
 https://github.com/erik/mittens
 https://github.com/farcaller/shiny
 https://github.com/faultier/albino
-https://github.com/faultier/bee/tree/develop
 https://github.com/faultier/whitebase
 https://github.com/freiguy1/phant-rust
 https://github.com/frewsxcv/geojson

@@ -4,7 +4,7 @@
 
 dir=$1
 all_features=""
-for rsfile in `find $dir -name "*.rs"`
+for rsfile in `find $dir -name "*.rs" -type f`
 do
     feature_lines=`grep "#!\[feature" $rsfile`
     # capture only betwen ( ... )

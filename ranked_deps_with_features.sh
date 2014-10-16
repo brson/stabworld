@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Combines the output of analyze_deps.sh with the output of
-# gen_package_features.txt to create a ranked list of popular
+# gen_package_features.sh to create a ranked list of popular
 # packages with the features they require
 
 ranked_deps_file=$1

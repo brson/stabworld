@@ -142,7 +142,6 @@ https://github.com/Geal/typedopts
 https://github.com/gfx-rs/gfx-rs
 https://github.com/gifnksm/man-sysnopsis-tools
 https://github.com/gifnksm/ProjectEulerRust
-https://github.com/glium/glium
 https://github.com/globin/rust-string-match
 https://github.com/godfryd/crowd
 https://github.com/gsingh93/24-solver

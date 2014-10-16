@@ -15,6 +15,6 @@ do
     git clone $i $repo_dir/$d --depth 1
     if [ $? != 0 ]
     then
-	(cd $repo_dir/$d && git pull)
+	(cd $repo_dir/$d && git checkout -f && git pull)
     fi
 done

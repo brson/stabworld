@@ -22,6 +22,8 @@ en-masse.
   cargo repository in the form 'repo: package'
 * `extract_package_names_from_world.sh` - As above but for a directory
   of local repos
+* `find_new_sources.sh` - Creates a list of source repos based
+  the output of `extract_deps_sources_from_world.sh`.
 * `gen_package_features.sh` - Combines the output of
   `extract_features_from_world.sh` (a list of 'repo: feature*') and
   the output of `extract_package_names_from_world.sh` (a list of

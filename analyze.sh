@@ -17,7 +17,7 @@ echo "\n# generating package features\n"
 echo "\n# ranking deps\n"
 ./rank_deps.sh $data/deps.txt | tee $data/ranked_deps.txt
 echo "\n# finding new sources\n"
-./find_new_sources.sh $data/features.txt | tee $data/new_sources.txt
+./find_new_sources.sh $data/deps_sources.txt | tee $data/new_sources.txt
 echo "\n# analyzing features\n"
 ./analyze_features.sh $data/features.txt | tee $data/analysis_features.txt
 echo "\n# analyzing deps\n"

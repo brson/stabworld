@@ -2,12 +2,19 @@
 
 # Clone all the repos on packages.txt
 
-mkdir -p repos
+packages_file=$1
+repo_dir=$2
 
-for i in `cat packages.txt`
+mkdir -p $repo_dir
+
+for i in `cat $packages_file`
 do
     d=`echo $i | sed 's/https:\/\///'`
     d=`echo $d | sed 's/\//\./g'`
-    mkdir -p repos/$d
-    git clone $i repos/$d --depth 1
+    mkdir -p $repo_dir/$d
+    git clone $i $repo_dir/$d --depth 1
+    if [ $? != 0 ]
+    then
+	(cd $repo_dir/$d && git pull)
+    fi
 done

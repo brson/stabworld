@@ -4,8 +4,6 @@ en-masse.
 # What's here?
 
 * clone.sh - Clone a list of repositories into a directory
-
-
 * extract_features.sh - Extract the features used by a local
   repository in the form 'repo: feature*'
 * extract_features_from_world.sh - As above but for a directory of
@@ -24,15 +22,11 @@ en-masse.
   cargo repository in the form 'repo: package'
 * extract_package_names_from_world.sh - As above but for a directory
   of local repos
-
-
 * gen_package_features.sh - Combines the output of
   extract_features_from_world.sh (a list of 'repo: feature*') and the
   output of extract_package_names_from_world.sh (a list of 'repo:
   package') to create a list of packages and the features they use (a
   list of 'package: feature*')
-
-
 * analyze_features.sh - Does some basic analysis on feature usage
   based on the output of extract_features_from_world.sh
 * analyze_deps.sh - Ranks the most popular packages based on the

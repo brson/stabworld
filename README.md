@@ -1,6 +1,15 @@
 This is a set of shell scripts for analyzing Rust/Cargo repositories
 en-masse.
 
+# Basic usage
+
+```
+> ./clone.sh packages.txt repos
+> ./analyze.sh repos data
+> cat data/analysis_features.txt
+> cat data/analysis_deps.txt
+```
+
 # What's here?
 
 * `clone.sh` - Clone a list of repositories into a directory
@@ -29,12 +38,12 @@ en-masse.
   the output of `extract_package_names_from_world.sh` (a list of
   'repo: package') to create a list of packages and the features they
   use (a list of 'package: feature*')
+* `rank_deps.sh` - Ranks the most popular packages based on the
+  output of `extract_deps_from_world.sh`
 * `analyze_features.sh` - Does some basic analysis on feature usage
   based on the output of `extract_features_from_world.sh`
-* `analyze_deps.sh` - Ranks the most popular packages based on the
-  output of `extract_deps_from_world.sh`
-* `ranked_deps_with_features.sh` - Combines the output of
-  `analyze_deps.sh` with the output of `gen_package_features.sh` to create
+* `analyze_deps.sh` - Combines the output of
+  `rank_deps.sh` with the output of `gen_package_features.sh` to create
   a list of the most popular packages along with the features they
   require
 

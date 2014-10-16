@@ -1,16 +1,17 @@
 #!/bin/sh
 
-# Analyzes the output of extract_deps_from_world.sh
+# Combines the output of analyze_deps.sh with the output of
+# gen_package_features.sh to create a ranked list of popular
+# packages with the features they require
 
-deps_file=$1
+ranked_deps_file=$1
+package_features_file=$2
 
-deps=`cat $1`
+package_features=`cat $package_features_file`
 
-# Remove lines where cargo failed
-deps=`echo "$deps" | grep -v "cargo generate-lockfile failed"`
-stripped=`echo "$deps" | sed "s/^.*: //"`
-# Put everything on its own line
-lined=`echo "$stripped" | tr " " "\n"`
-sorted=`echo "$lined" | sort | uniq -c | sort -nr`
-
-echo "$sorted"
+while read line; do
+    name=`echo "$line" | cut -f2 -d" "`
+    feature_line=`echo "$package_features" | grep "^$name:"`
+    features=`echo "$feature_line" | sed "s/^.*:\(.*\)/\1/"`
+    echo "$line:$features"
+done <$ranked_deps_file

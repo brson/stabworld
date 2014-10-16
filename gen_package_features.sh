@@ -12,6 +12,6 @@ package_names=`cat $package_names_file`
 while read line; do
     repo=`echo "$line" | sed "s/\(.*\):.*/\1/"`
     features=`echo "$line" | sed "s/.*:\(.*\)/\1/"`
-    package_name=`echo "$package_names" | grep $repo | sed "s/.*: \(.*\)/\1/"`
+    package_name=`echo "$package_names" | grep "$repo:" | sed "s/.*: \(.*\)/\1/"`
     echo "$package_name:$features"
 done <$features_file

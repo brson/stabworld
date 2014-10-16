@@ -13,6 +13,4 @@ stripped=`echo "$deps" | sed "s/^.*: //"`
 lined=`echo "$stripped" | tr " " "\n"`
 sorted=`echo "$lined" | sort | uniq -c | sort -nr`
 
-echo
-echo "# Popular libs"
 echo "$sorted"

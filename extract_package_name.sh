@@ -5,7 +5,7 @@
 dir=$1
 if [ ! -f $dir/Cargo.toml ]
 then
-    echo "$dir: [no Cargo.toml]"
+    echo "$dir: [no_Cargo.toml]"
     exit 1
 fi
 

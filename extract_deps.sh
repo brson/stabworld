@@ -7,14 +7,14 @@ cd $dir
 bash -c 'cargo generate-lockfile &> /dev/null'
 if [ $? != 0 ]
 then
-    echo "$dir: [cargo generate-lockfile failed]"
+    echo "$dir: [cargo_generate-lockfile_failed]"
     exit 1
 fi
 
 dot=`cargo dot`
 if [ $? != 0 ]
 then
-    echo "$dir: [cargo dot failed]"
+    echo "$dir: [cargo_dot_failed]"
 fi
 
 # extract #[label="..." lines

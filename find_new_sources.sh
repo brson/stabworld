@@ -15,7 +15,7 @@ deps=`echo "$deps" | sed "s/^file.* //"`
 # remove the leading local repo name if it's the only thing on the line
 deps=`echo "$deps" | sed "s/^file.*$//"`
 # remove error lines
-deps=`echo "$deps" | sed "s/\[cargo generate-lockfile failed\]//"`
+deps=`echo "$deps" | sed "s/\[cargo_generate-lockfile_failed\]//"`
 # remove blank lines
 deps=`echo "$deps" | sed "/^$/d"`
 # remove trailing '.git' for canonicalization

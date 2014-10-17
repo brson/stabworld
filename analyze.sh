@@ -14,6 +14,10 @@ echo "\n# extracting package_names\n"
 ./extract_package_names_from_world.sh $repos | tee $data/package_names.txt
 echo "\n# generating package features\n"
 ./gen_package_features.sh $data/package_names.txt $data/features.txt | tee $data/package_features.txt
+echo "\n# generating package deps\n"
+./gen_package_deps.sh $data/package_names.txt $data/deps.txt | tee $data/package_deps.txt
+echo "\n generating transitive features\n"
+./gen_transitive_features.sh $data/package_deps.txt $data/package_features.txt | tee $data/package_transitive_features.sh
 echo "\n# ranking deps\n"
 ./rank_deps.sh $data/deps.txt | tee $data/ranked_deps.txt
 echo "\n# finding new sources\n"
@@ -21,6 +25,6 @@ echo "\n# finding new sources\n"
 echo "\n# analyzing features\n"
 ./analyze_features.sh $data/features.txt | tee $data/analysis_features.txt
 echo "\n# analyzing deps\n"
-./analyze_deps.sh $data/ranked_deps.txt $data/package_features.txt | tee $data/analysis_deps.txt
+./analyze_deps.sh $data/ranked_deps.txt $data/package_transitive_features.txt | tee $data/analysis_deps.txt
 
 echo "\n# done\n"

@@ -3,6 +3,8 @@
 repos=$1
 data=$2
 
+mkdir -p data
+
 # First extract features
 echo "\n# extracting features\n"
 ./extract_features_from_world.sh $repos | tee $data/features.txt

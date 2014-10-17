@@ -17,7 +17,7 @@ echo "\n# generating package features\n"
 echo "\n# generating package deps\n"
 ./gen_package_deps.sh $data/package_names.txt $data/deps.txt | tee $data/package_deps.txt
 echo "\n generating transitive features\n"
-./gen_transitive_features.sh $data/package_deps.txt $data/package_features.txt | tee $data/package_transitive_features.sh
+./gen_transitive_features.sh $data/package_deps.txt $data/package_features.txt | tee $data/package_transitive_features.txt
 echo "\n# ranking deps\n"
 ./rank_deps.sh $data/deps.txt | tee $data/ranked_deps.txt
 echo "\n# finding new sources\n"

@@ -5,13 +5,15 @@ en-masse.
 
 ```
 > ./dl-cargo-packages.py crates.io-index crates sources
-> ./analyze.sh sources data
+> ./analyze.sh crates.io-index sources data
 > cat data/analysis_features.txt
 > cat data/analysis_deps.txt
 ```
 
 # What's here?
 
+* `dl-cargo-packages.py` Downloads and extracts the most recent
+  version of all registered Cargo packages.
 * `clone.sh` - Clone a list of repositories into a directory
 * `extract_features.sh` - Extract the features used by a local
   repository in the form 'repo: feature*'
@@ -49,3 +51,7 @@ en-masse.
 
 
 [1]: https://github.com/maxsnew/cargo-dot
+
+# TODO
+
+* Analyze stability

@@ -272,7 +272,6 @@ https://github.com/phildawes/racer
 https://github.com/pietro/rust-sha
 https://github.com/pinyin-tools/librustpinyin
 https://github.com/PistonDevelopers/cam
-https://github.com/PistonDevelopers/collada
 https://github.com/PistonDevelopers/conrod
 https://github.com/PistonDevelopers/freetype-rs
 https://github.com/PistonDevelopers/gfx_graphics
@@ -291,8 +290,6 @@ https://github.com/PistonDevelopers/rust-event
 https://github.com/PistonDevelopers/rust-graphics
 https://github.com/PistonDevelopers/rust-graphics-lab
 https://github.com/PistonDevelopers/rust-image
-https://github.com/PistonDevelopers/rust-music-score
-https://github.com/PistonDevelopers/scenegraph
 https://github.com/PistonDevelopers/sdl2_game_window
 https://github.com/pistondevelopers/shader_version
 https://github.com/PistonDevelopers/shader_version

@@ -4,8 +4,8 @@ en-masse.
 # Basic usage
 
 ```
-> ./clone.sh packages.txt repos
-> ./analyze.sh repos data
+> ./dl-cargo-packages.py crates.io-index crates sources
+> ./analyze.sh sources data
 > cat data/analysis_features.txt
 > cat data/analysis_deps.txt
 ```
